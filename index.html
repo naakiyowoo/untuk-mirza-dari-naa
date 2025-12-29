@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A Letter for You</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <audio id="myAudio" loop>
+        <source src="musik-kamu.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container">
+        <div class="intro" id="introText">
+            Mirzaa, i hope you read this, it's straight from my heart.
+        </div>
+        
+        <button class="btn" id="startBtn" onclick="showLetter()">Read it</button>
+
+        <div class="letter" id="letterBox">
+            <p id="typedText"></p>
+            <img src="ttd.png" alt="Signature" class="signature" id="signatureImg" />
+        </div>
+    </div>
+
+    <div id="musicToggle" class="music-control" onclick="toggleMusic()" style="display: none;">🎵</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
